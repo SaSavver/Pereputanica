@@ -1,0 +1,594 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25cd856547532b14f949ac3c433bf141, type: 3}
+  m_Name: TextConfig
+  m_EditorClassIdentifier: 
+  BookCharacters:
+  - Character: 0
+    SpriteUpper: {fileID: 1582369718997045311, guid: 9acf428b050c7f44f87fc8a993c7040e,
+      type: 3}
+    SpriteBottom: {fileID: 654286599986491979, guid: e4d027ef7e83d514298effd005882ca9,
+      type: 3}
+    TextUpper: "\u0414\u043E\u0431\u0440\u044F\u0447\u043E\u043A \u0440\u0430\u0437\u043C\u0435\u0440\u043E\u043C
+      \u0441 \u0434\u043E\u043C, ~\u0413\u043E\u0432\u043E\u0440\u044F\u0442 \xAB\u0431\u043E\u043B\u044C\u0448\u043E\u0439\xBB
+      \u043E \u043D\u0435\u043C."
+    TextBottom: "\u0415\u0441\u043B\u0438 \u043A\u0442\u043E-\u043D\u0438\u0431\u0443\u0434\u044C
+      \u043F\u043E\u043F\u0440\u043E\u0441\u0438\u0442, ~\u041D\u043E\u0441\u043E\u043C
+      \u0433\u0440\u0443\u0437\u044B \u043F\u0435\u0440\u0435\u043D\u043E\u0441\u0438\u0442."
+    UpperAudio: {fileID: 8300000, guid: 36d769c70bd23ae40ad1d7a9d6257a18, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 1c49b2953633d134ab5f0aadb78e717a, type: 3}
+  - Character: 1
+    SpriteUpper: {fileID: 211020532207957774, guid: 1f6a1ba2cbb66094da4805223ef9e663,
+      type: 3}
+    SpriteBottom: {fileID: -4941066325408554325, guid: fd2e4d0d80b4bc94dad967e07a0c320a,
+      type: 3}
+    TextUpper: "\u041E\u043D \u0445\u0438\u0442\u0440\u0435\u0439 \u043B\u044E\u0431\u043E\u0433\u043E
+      \u0437\u0432\u0435\u0440\u044F, ~\u041F\u043E\u0442\u043E\u043C\u0443 \u0435\u043C\u0443
+      \u043D\u0435 \u0432\u0435\u0440\u044F\u0442."
+    TextBottom: "\u041A\u0430\u043A \u043F\u043E\u0439\u0434\u0435\u0442 \u043D\u0430
+      \u0443\u043B\u0438\u0446\u0443, ~\u0422\u0430\u043A \u0443\u0442\u0430\u0449\u0438\u0442
+      \u043A\u0443\u0440\u0438\u0446\u0443."
+    UpperAudio: {fileID: 8300000, guid: e4488deeeb976444d83aaf3c1fdd861b, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 0883d59f9af06b443b727da5217ae23e, type: 3}
+  - Character: 2
+    SpriteUpper: {fileID: 7459549909244011365, guid: 1313ca754905f7545a9341ac5a3f8b3e,
+      type: 3}
+    SpriteBottom: {fileID: -9038913529251278911, guid: da2fb22c23871bd4680222dff2bf35b1,
+      type: 3}
+    TextUpper: "\u041C\u043E\u043B\u0447\u0430\u043B\u0438\u0432\u043E\u0435 \u0431\u0440\u0435\u0432\u043D\u043E,
+      ~\u0421 \u043F\u0430\u0441\u0442\u044C\u044E, \u043A\u0430\u0436\u0435\u0442\u0441\u044F,
+      \u043E\u043D\u043E."
+    TextBottom: "\u041D\u043E, \u0440\u0435\u0431\u044F\u0442\u0430, \u0432 \u044D\u0442\u0443
+      \u043F\u0430\u0441\u0442\u044C ~\u041D\u0435 \u0436\u0435\u043B\u0430\u044E
+      \u0432\u0430\u043C \u043F\u043E\u043F\u0430\u0441\u0442\u044C."
+    UpperAudio: {fileID: 8300000, guid: 2a1dd637d87f75d4986f9c98f5249101, type: 3}
+    BottomAudio: {fileID: 8300000, guid: a0a0a6b77baec06468f0b18f1571f8ec, type: 3}
+  - Character: 3
+    SpriteUpper: {fileID: -8152224793763755189, guid: 27fab938430a40847ba628f2702fcb5f,
+      type: 3}
+    SpriteBottom: {fileID: -4984389783896803139, guid: 5a05d6f1df75ccc42ac0abbfa9255540,
+      type: 3}
+    TextUpper: "\u0421\u043B\u043E\u0432\u043D\u043E \u043E\u0441\u0442\u0440\u043E\u0432
+      \u0432 \u043E\u043A\u0435\u0430\u043D\u0435, ~\u041E\u043D \u0438\u0433\u0440\u0430\u0435\u0442\u0441\u044F
+      \u0432\u043E\u043B\u043D\u0430\u043C\u0438."
+    TextBottom: "\u041C\u043E\u043B\u0447\u0430 \u043F\u043E \u043C\u043E\u0440\u044E
+      \u043F\u043B\u044B\u0432\u0435\u0442, ~\u041A\u0430\u043A \u043E\u0433\u0440\u043E\u043C\u043D\u044B\u0439
+      \u043F\u0430\u0440\u043E\u0445\u043E\u0434."
+    UpperAudio: {fileID: 8300000, guid: 1f4e7a5800e9035429b1d8b0294dc556, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 7fcf86e6e41616049a71c2c3b4676ed1, type: 3}
+  - Character: 4
+    SpriteUpper: {fileID: 1633936003328746846, guid: fcdfd84af2d461a4a9a0df8c19b3a3b7,
+      type: 3}
+    SpriteBottom: {fileID: 3799480482707727993, guid: ba022a2778f338848934b569d5e664a2,
+      type: 3}
+    TextUpper: "\u041E\u043D \u0431\u043E\u0438\u0442\u0441\u044F \u0432\u0441\u0435\u0445
+      \u0432 \u043B\u0435\u0441\u0443: ~\u041C\u0438\u0448\u043A\u0443, \u0432\u043E\u043B\u043A\u0430
+      \u0438 \u043B\u0438\u0441\u0443."
+    TextBottom: "\u041D\u0435 \u0434\u043E\u0433\u043D\u0430\u0442\u044C \u0435\u0433\u043E
+      \u043D\u0438\u043A\u0430\u043A, ~\u0411\u044B\u0441\u0442\u0440\u043E \u0431\u0435\u0433\u0430\u0442\u044C
+      \u043E\u043D \u043C\u0430\u0441\u0442\u0430\u043A."
+    UpperAudio: {fileID: 8300000, guid: f3b71adf6ed46d04d92e8292611cec0e, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 9689d303a2440f444b52107d648a87e6, type: 3}
+  - Character: 5
+    SpriteUpper: {fileID: 8450820763086081925, guid: 53908486e3491b647b9e7a8b528d0ef8,
+      type: 3}
+    SpriteBottom: {fileID: 3717896355963650848, guid: 72022f2c67e7a64499e20d65f4fc03a0,
+      type: 3}
+    TextUpper: "\u0415\u0441\u043B\u0438 \u043F\u0443\u0441\u0442\u0438\u0448\u044C
+      \u0432 \u043E\u0433\u043E\u0440\u043E\u0434, ~\u0412\u0441\u044F \u043A\u0430\u043F\u0443\u0441\u0442\u0430
+      \u043F\u0440\u043E\u043F\u0430\u0434\u0435\u0442."
+    TextBottom: "\u0410 \u0434\u043B\u044F \u043A\u0430\u0436\u0434\u043E\u0433\u043E
+      \u0432\u0440\u0430\u0433\u0430 ~\u041F\u0440\u0438\u0433\u043E\u0442\u043E\u0432\u043B\u0435\u043D\u044B
+      \u0440\u043E\u0433\u0430."
+    UpperAudio: {fileID: 8300000, guid: f4e5599b970841745be61ba2c1be5626, type: 3}
+    BottomAudio: {fileID: 8300000, guid: e5d5ad0b8b4da43fb8ed37bc60524f87, type: 3}
+  - Character: 6
+    SpriteUpper: {fileID: -7787931752223029897, guid: 5b85b0f6dfb4abe45a1e0271dec2dcca,
+      type: 3}
+    SpriteBottom: {fileID: -8211754944657470264, guid: 0a425c3f70775f745bf05a3c201bbd96,
+      type: 3}
+    TextUpper: "\u041F\u043E \u0443\u0442\u0440\u0443 \u0442\u0435\u0431\u044F \u0440\u0430\u0437\u0431\u0443\u0434\u0438\u0442,
+      ~\u0413\u0440\u043E\u043C\u043A\u043E \u043A\u0443\u043A\u0430\u0440\u0435\u043A\u0430\u0442\u044C
+      \u0431\u0443\u0434\u0435\u0442."
+    TextBottom: "\u0411\u0443\u0434\u0435\u0442 \u043F\u043E \u0434\u0432\u043E\u0440\u0443
+      \u0448\u0430\u0433\u0430\u0442\u044C, ~\u0411\u0443\u0434\u0435\u0442 \u0437\u0435\u0440\u043D\u044B\u0448\u043A\u0438
+      \u043A\u043B\u0435\u0432\u0430\u0442\u044C."
+    UpperAudio: {fileID: 8300000, guid: 215594c6be484ef4d80b175f8b5cd80d, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 83a31a26cfb6f1e498e74f70cdea28ae, type: 3}
+  - Character: 7
+    SpriteUpper: {fileID: 3064495123019179952, guid: c2aaa4fecfb018246947be81812ad457,
+      type: 3}
+    SpriteBottom: {fileID: 8418452904931666441, guid: f59d263fb704a8243a16a63023ed31fc,
+      type: 3}
+    TextUpper: "\u041E\u043D \u043C\u0443\u0440\u043B\u044B\u0447\u0435\u0442 \u0438
+      \u0438\u0433\u0440\u0430\u0435\u0442, ~\u041E\u043D \u0432\u0441\u0435\u0433\u0434\u0430
+      \u043E\u0434\u0438\u043D \u0433\u0443\u043B\u044F\u0435\u0442."
+    TextBottom: "\u042D\u0442\u0438 \u043B\u0430\u043F\u043A\u0438 \u0442\u0430\u043A
+      \u043C\u044F\u0433\u043A\u0438, ~\u0422\u043E\u043B\u044C\u043A\u043E \u0432
+      \u043B\u0430\u043F\u043A\u0430\u0445 \u043A\u043E\u0433\u043E\u0442\u043A\u0438."
+    UpperAudio: {fileID: 8300000, guid: eb136ff52622ebd4d84a99ba10ce5bed, type: 3}
+    BottomAudio: {fileID: 8300000, guid: fcba731178b112c48b8cad616b3e5f12, type: 3}
+  - Character: 8
+    SpriteUpper: {fileID: -5298647247185862026, guid: fc6c9e936112ff94e8b9c12bf9cb845b,
+      type: 3}
+    SpriteBottom: {fileID: 3239573864577809620, guid: 07f06b10da218ba48878e730c8fce96b,
+      type: 3}
+    TextUpper: "\u041E\u043D \u0437\u0443\u0431\u0430\u0441\u0442\u044B\u0439, \u0441\u0435\u0440\u044B\u0439,
+      \u0437\u043B\u043E\u0439. ~\u041D\u043E\u0447\u044C\u044E \u0432\u043E\u0435\u0442
+      \u043F\u043E\u0434 \u043B\u0443\u043D\u043E\u0439."
+    TextBottom: "\u041E\u043D \u043D\u0435 \u043B\u044E\u0431\u0438\u0442 \u043F\u0430\u0441\u0442\u0443\u0445\u043E\u0432,
+      ~\u0410 \u043E\u0432\u0435\u0447\u043A\u0443 \u0441\u044A\u0435\u0441\u0442\u044C
+      \u0433\u043E\u0442\u043E\u0432."
+    UpperAudio: {fileID: 8300000, guid: 273d4b7a9e36fac42b9339eca51780e2, type: 3}
+    BottomAudio: {fileID: 8300000, guid: e517b68f78bab464489ebd03c8952651, type: 3}
+  - Character: 9
+    SpriteUpper: {fileID: 2043489417594004209, guid: 6e8e0bd3159e44c49b1fffea65957f47,
+      type: 3}
+    SpriteBottom: {fileID: 6494358897637027385, guid: 1a556bce937ec45488f7b60d6e9bf01a,
+      type: 3}
+    TextUpper: "\u041E\u043D \u0437\u0438\u043C\u043E\u044E \u0432\u0438\u0434\u0438\u0442
+      \u0441\u043D\u044B - ~\u0421\u043F\u0438\u0442 \u0432 \u0431\u0435\u0440\u043B\u043E\u0433\u0435
+      \u0434\u043E \u0432\u0435\u0441\u043D\u044B,"
+    TextBottom: "\u041E\u0447\u0435\u043D\u044C \u043B\u044E\u0431\u0438\u0442 \u0441\u043B\u0430\u0434\u043A\u0438\u0439
+      \u043C\u0435\u0434, ~\u042D\u0442\u043E\u0442 \u043C\u0435\u0434 \u0432\u0435\u0437\u0434\u0435
+      \u043D\u0430\u0439\u0434\u0435\u0442."
+    UpperAudio: {fileID: 8300000, guid: 58a4897a54ba542449317df15b55b53f, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 6bbc1d15f6bc9bf4dbcb91da274b6a09, type: 3}
+  - Character: 10
+    SpriteUpper: {fileID: 8288602186214367472, guid: 230f11cd3f477ed4db738b3746e019f5,
+      type: 3}
+    SpriteBottom: {fileID: 2403527973265603813, guid: 89023f6add370814aab14ce206d4f3e3,
+      type: 3}
+    TextUpper: "\u041E\u043D \u0431\u0435\u0436\u0438\u0442 \u0437\u0430 \u043F\u0430\u043B\u043A\u043E\u0439,
+      \u043B\u0430\u0435\u0442, ~\u0421 \u0440\u0435\u0431\u044F\u0442\u0438\u0448\u043A\u0430\u043C\u0438
+      \u0438\u0433\u0440\u0430\u0435\u0442."
+    TextBottom: "\u0418 \u0432 \u043B\u044E\u0431\u043E\u0439 \u043C\u043E\u043C\u0435\u043D\u0442
+      \u0433\u043E\u0442\u043E\u0432 ~\u0421\u043E \u0434\u0432\u043E\u0440\u0430
+      \u043F\u0440\u043E\u0433\u043D\u0430\u0442\u044C \u043A\u043E\u0442\u043E\u0432."
+    UpperAudio: {fileID: 8300000, guid: eb38489b8e138411bb3ba5e4467d9cd7, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 6eb66fc307fd84baeaf034d187ece0ae, type: 3}
+  - Character: 11
+    SpriteUpper: {fileID: 1582369718997045311, guid: b1ea27e4962bc6243bf150b6f14e2657,
+      type: 3}
+    SpriteBottom: {fileID: 654286599986491979, guid: c1a1f13dba47a0a4d874aab5fc147401,
+      type: 3}
+    TextUpper: "\u042F \u043F\u043E\u0441\u0442\u0440\u043E\u0438\u043B \u043D\u043E\u0432\u044B\u0439
+      \u0434\u043E\u043C - ~\u0412\u0430\u043C \u0443\u044E\u0442\u043D\u043E \u0431\u0443\u0434\u0435\u0442
+      \u0432 \u043D\u0435\u043C."
+    TextBottom: "\u0412 \u044D\u0442\u043E\u043C \u0434\u0435\u043B\u0435 \u043C\u043D\u0435
+      \u043F\u043E\u043C\u043E\u0433 ~\u041C\u043E\u0439 \u0442\u043E\u0432\u0430\u0440\u0438\u0449
+      \u043C\u0430\u0441\u0442\u0435\u0440\u043E\u043A."
+    UpperAudio: {fileID: 8300000, guid: d3dcf2383c6d193438c361691c8494cf, type: 3}
+    BottomAudio: {fileID: 8300000, guid: f59dd80ce3b60344c9060a65e2d10d02, type: 3}
+  - Character: 12
+    SpriteUpper: {fileID: 211020532207957774, guid: f3895079f62eac347a58dae16f9dbae0,
+      type: 3}
+    SpriteBottom: {fileID: -4941066325408554325, guid: b1399da2f3940aa4db881dfe3ef5c0dd,
+      type: 3}
+    TextUpper: "\u041D\u0430 \u043A\u043E\u0441\u043C\u0438\u0447\u0435\u0441\u043A\u043E\u0439
+      \u0440\u0430\u043A\u0435\u0442\u0435 ~\u041F\u043E\u043B\u0435\u0447\u0443
+      \u043A \u0434\u0440\u0443\u0433\u043E\u0439 \u043F\u043B\u0430\u043D\u0435\u0442\u0435."
+    TextBottom: "\u041D\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043D\u0443\u044E
+      \u0437\u0432\u0435\u0437\u0434\u0443 ~\u0412 \u0434\u0430\u043B\u044C\u043D\u0435\u043C
+      \u043A\u043E\u0441\u043C\u043E\u0441\u0435 \u043D\u0430\u0439\u0434\u0443"
+    UpperAudio: {fileID: 8300000, guid: b7213ac99b5dff541bbc4f4deac3a9a3, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 7d05ee78959188e46939e72cd95a9ef5, type: 3}
+  - Character: 13
+    SpriteUpper: {fileID: 7459549909244011365, guid: 532f7ce88ef52ca47bc2ac450c5f25a7,
+      type: 3}
+    SpriteBottom: {fileID: -9038913529251278911, guid: 0815cfffc2bba0343a4739da246360db,
+      type: 3}
+    TextUpper: "\u041A\u043B\u044E\u0448\u043A\u0430, \u0444\u043E\u0440\u043C\u0430
+      \u0438 \u043A\u043E\u043D\u044C\u043A\u0438 ~\u042D\u0442\u043E \u0432\u0441\u0435
+      - \u043C\u043E\u0438 \u0434\u0440\u0443\u0436\u043A\u0438."
+    TextBottom: "\u0410 \u0443 \u0448\u043B\u0435\u043C\u0430 \u0433\u0440\u043E\u0437\u043D\u044B\u0439
+      \u0432\u0438\u0434. ~\u041E\u043D \u043E\u0442 \u0448\u0430\u0439\u0431\u044B
+      \u0437\u0430\u0449\u0438\u0442\u0438\u0442"
+    UpperAudio: {fileID: 8300000, guid: 54cb23b0f900b09409c30b0097c0fa97, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 506e78a113cd46146afb523de8ef2bc5, type: 3}
+  - Character: 15
+    SpriteUpper: {fileID: 3610052879432635574, guid: 92c5a67447668f24ca71adf82449aa16,
+      type: 3}
+    SpriteBottom: {fileID: -4984389783896803139, guid: d6959946b9d0d8f4f8ea85bc2a56d781,
+      type: 3}
+    TextUpper: "\u041B\u044E\u0431\u0438\u0442 \u044F\u0431\u043B\u043E\u043D\u044F
+      \u0443\u0445\u043E\u0434, ~\u041E\u0442\u0434\u043E\u0445\u043D\u0443\u0442\u044C
+      \u043C\u043D\u0435 \u043D\u0435 \u0434\u0430\u0435\u0442."
+    TextBottom: "\u0418 \u0432 \u0441\u0430\u0434\u0443 \u0434\u043E \u043F\u043E\u0437\u0434\u043D\u0435\u0439
+      \u043D\u043E\u0447\u0438 ~\u041F\u0440\u043E\u0432\u043E\u0436\u0443 \u0441\u0432\u043E\u0439
+      \u0434\u0435\u043D\u044C \u0440\u0430\u0431\u043E\u0447\u0438\u0439."
+    UpperAudio: {fileID: 8300000, guid: a34113c1f398c2f499596bf759b1e070, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 646d8f9855162b8488911715be850248, type: 3}
+  - Character: 16
+    SpriteUpper: {fileID: -893766569387475834, guid: a692168b05901bd4786a71281b5a0737,
+      type: 3}
+    SpriteBottom: {fileID: 3799480482707727993, guid: 0dc0411d86361ba429d32c4fce5425fb,
+      type: 3}
+    TextUpper: "\u0412 \u043B\u0430\u0441\u0442\u0430\u0445 \u0441 \u043C\u0430\u0441\u043A\u043E\u0439
+      \u044F \u043D\u044B\u0440\u043D\u0443 ~\u041D\u0430 \u0431\u043E\u043B\u044C\u0448\u0443\u044E
+      \u0433\u043B\u0443\u0431\u0438\u043D\u0443. "
+    TextBottom: "\u041C\u043D\u0435 \u0432 \u0431\u0430\u043B\u043B\u043E\u043D\u0435
+      \u043A\u0438\u0441\u043B\u043E\u0440\u043E\u0434 ~\u041F\u043E\u0434 \u0432\u043E\u0434\u043E\u0439
+      \u0434\u044B\u0448\u0430\u0442\u044C \u0434\u0430\u0435\u0442. "
+    UpperAudio: {fileID: 8300000, guid: 7aa5c15a77121684c9562712b87e078e, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 21d13b5de47f66b48a606fcde6af3037, type: 3}
+  - Character: 17
+    SpriteUpper: {fileID: -6225828767284593667, guid: 07ef92930665d3144bfac9c253582d4c,
+      type: 3}
+    SpriteBottom: {fileID: 3717896355963650848, guid: c2c7137d1db1372419e71569cc61f0d2,
+      type: 3}
+    TextUpper: "\u0427\u0442\u043E\u0431\u044B \u0432\u044B\u043B\u0435\u0447\u0438\u0442\u044C
+      \u043F\u0440\u043E\u0441\u0442\u0443\u0434\u0443. ~\u0412\u0430\u043C \u0433\u043E\u0440\u0447\u0438\u0447\u043D\u0438\u043A
+      \u0441\u0442\u0430\u0432\u0438\u0442\u044C \u0431\u0443\u0434\u0443."
+    TextBottom: " \u0410 \u0442\u0435\u043F\u0435\u0440\u044C \u043E\u0442\u043A\u0440\u043E\u0439\u0442\u0435
+      \u0440\u043E\u0442! ~\u0414\u0430\u043C \u0442\u0430\u0431\u043B\u0435\u0442\u043A\u0443
+      - \u0432\u0441\u0435 \u043F\u0440\u043E\u0439\u0434\u0435\u0442."
+    UpperAudio: {fileID: 8300000, guid: 2f3cc43c0c94d244e957cf242bd7d36b, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 3ed90be752ef7c14897fe8a3ea137cd2, type: 3}
+  - Character: 18
+    SpriteUpper: {fileID: 5389518278029468606, guid: 9a4a69546ea6a9f4ab9bd142d31aaf2b,
+      type: 3}
+    SpriteBottom: {fileID: -8211754944657470264, guid: 595554ecfafd75049ae5d4d1e0430a4e,
+      type: 3}
+    TextUpper: "\u0421\u0443\u043F \u0432\u0430\u0440\u044E, \u043F\u0438\u0440\u043E\u0433
+      \u043F\u0435\u043A\u0443, ~\u0412 \u0442\u0435\u0441\u0442\u043E \u043F\u0440\u0435\u0432\u0440\u0430\u0449\u0443
+      \u043C\u0443\u043A\u0443"
+    TextBottom: "\u0421 \u043F\u043E\u0432\u0430\u0440\u0435\u0448\u043A\u043E\u044E
+      \u0432 \u0440\u0443\u043A\u0435, ~\u0432 \u0447\u0438\u0441\u0442\u043E\u043C,
+      \u0431\u0435\u043B\u043E\u043C \u043A\u043E\u043B\u043F\u0430\u043A\u0435."
+    UpperAudio: {fileID: 8300000, guid: ebe97065a5d9c884a9e6995076c9e574, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 53d50637b7c012a4597086c6e33c91ef, type: 3}
+  - Character: 19
+    SpriteUpper: {fileID: 3064495123019179952, guid: ad7300c227edb12479bcfb5d5ddfd097,
+      type: 3}
+    SpriteBottom: {fileID: 8418452904931666441, guid: 79ee9027574e45343a972b6b1c7257b0,
+      type: 3}
+    TextUpper: "\u041C\u043D\u0435 \u043F\u043E\u0447\u0435\u0442 \u0438 \u0443\u0432\u0430\u0436\u0435\u043D\u044C\u0435
+      - ~\u0420\u0435\u0433\u0443\u043B\u0438\u0440\u0443\u044E \u0434\u0432\u0438\u0436\u0435\u043D\u044C\u0435."
+    TextBottom: "\u0422\u0430\u043C \u0433\u0434\u0435 \u0442\u0440\u0430\u043D\u0441\u043F\u043E\u0440\u0442\u0430
+      \u043F\u043E\u0442\u043E\u043A, ~\u041F\u043E\u043C\u043E\u0433\u0430\u0435\u0442
+      \u043C\u043D\u0435 \u0441\u0432\u0438\u0441\u0442\u043E\u043A."
+    UpperAudio: {fileID: 8300000, guid: 5944a3985dc7782499412131bbcb7808, type: 3}
+    BottomAudio: {fileID: 8300000, guid: c119fe16975d3e54293b34bf2ba2bcbd, type: 3}
+  - Character: 20
+    SpriteUpper: {fileID: -5298647247185862026, guid: fcdb3e017f06703468fd424178e5d8c8,
+      type: 3}
+    SpriteBottom: {fileID: 3239573864577809620, guid: 8c21a5aabae09fa448bf38df69f2aae3,
+      type: 3}
+    TextUpper: "\u042F \u043F\u0440\u043E\u043A\u0430\u0437\u043D\u0438\u0447\u0430\u0442\u044C
+      \u043B\u044E\u0431\u043B\u044E. ~\u0412\u0441\u0435\u0445 \u0432\u043E\u043A\u0440\u0443\u0433
+      \u0440\u0430\u0437\u0432\u0435\u0441\u0435\u043B\u044E. "
+    TextBottom: "\u041F\u043E\u0441\u043C\u043E\u0442\u0440\u0438\u0442\u0435 \u043D\u0430
+      \u043C\u043E\u0439 \u043D\u043E\u0441, ~\u0421\u0442\u0430\u043D\u0435\u0442
+      \u0432\u0430\u043C \u0441\u043C\u0435\u0448\u043D\u043E \u0434\u043E \u0441\u043B\u0435\u0437."
+    UpperAudio: {fileID: 8300000, guid: aeaf6b3843b12ee4b803cdd19b0c0cde, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 3372cf921422bfe4bb4a3338e1cfc9a2, type: 3}
+  - Character: 21
+    SpriteUpper: {fileID: 2043489417594004209, guid: a1eba85bf6f459643817dbdcce4b01d2,
+      type: 3}
+    SpriteBottom: {fileID: 6494358897637027385, guid: bdb60884a101a5d4faa8baa6e773b12f,
+      type: 3}
+    TextUpper: "\u042F \u0441\u0440\u0430\u0436\u0430\u044E\u0441\u044C \u0441 \u0441\u0435\u0440\u044B\u043C
+      \u0446\u0432\u0435\u0442\u043E\u043C, ~\u041A\u0440\u0430\u0448\u0443 \u0432\u0441\u0451
+      \u0437\u0438\u043C\u043E\u0439 \u0438 \u043B\u0435\u0442\u043E\u043C."
+    TextBottom: "\u0412 \u043F\u044F\u0442\u043D\u0430\u0445 \u0432\u0435\u0441\u044C
+      \u043A\u043E\u043C\u0431\u0438\u043D\u0435\u0437\u043E\u043D, ~\u041D\u043E
+      \u0437\u0430\u0442\u043E \u043F\u043E\u043A\u0440\u0430\u0448\u0435\u043D \u0434\u043E\u043C."
+    UpperAudio: {fileID: 8300000, guid: 3d849aae4cccaa549b696e5368483fb5, type: 3}
+    BottomAudio: {fileID: 8300000, guid: dc4cba8003ee15d46985a20f5dda1867, type: 3}
+  - Character: 22
+    SpriteUpper: {fileID: 267058351191769749, guid: 752b78d9a1caa1f41b7dcf3461357a51,
+      type: 3}
+    SpriteBottom: {fileID: 2403527973265603813, guid: 45f54a716abd000478f22ffe43a42279,
+      type: 3}
+    TextUpper: "\u042F \u0441 \u0441\u0438\u0440\u0435\u043D\u0430\u043C\u0438 \u043F\u0440\u0438\u043C\u0447\u0430\u043B\u0441\u044F,
+      ~\u0421 \u0434\u044B\u043C\u043E\u043C \u0438 \u043E\u0433\u043D\u0435\u043C
+      \u0441\u0440\u0430\u0436\u0430\u043B\u0441\u044F. "
+    TextBottom: "\u042F \u0438\u0437 \u0448\u043B\u0430\u043D\u0433\u0430 \u0432\u043E\u0434\u0443
+      \u043B\u0438\u043B ~\u0411\u044B\u0441\u0442\u0440\u043E \u043F\u043B\u0430\u043C\u044F
+      \u043F\u043E\u0431\u0435\u0434\u0438\u043B."
+    UpperAudio: {fileID: 8300000, guid: 3c3d296bfef1645a58886ec2ae2bda81, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 3937d75f6541e43c8a278d4bf67ee907, type: 3}
+  - Character: 23
+    SpriteUpper: {fileID: -2437270765691798850, guid: 949dc3cc1622e744aad1d5e5727aa1cf,
+      type: 3}
+    SpriteBottom: {fileID: 654286599986491979, guid: 712faac6e6093bd4793ca7794875c92d,
+      type: 3}
+    TextUpper: "\u041D\u043E\u043C\u0435\u0440 \u043D\u0430\u0431\u0435\u0440\u0438,
+      \u0434\u0440\u0443\u0436\u043E\u043A, ~\u042F \u0432 \u043E\u0442\u0432\u0435\u0442
+      \u0442\u0435\u0431\u0435-\u0433\u0443\u0434\u043E\u043A."
+    TextBottom: "\u041F\u043E\u0434\u043D\u0438\u043C\u0430\u0439 \u0431\u044B\u0441\u0442\u0440\u0435\u0435
+      \u0442\u0440\u0443\u0431\u043A\u0443, ~\u0427\u0442\u043E\u0431\u044B \u043F\u043E\u0431\u043E\u043B\u0442\u0430\u0442\u044C
+      \u043C\u0438\u043D\u0443\u0442\u043A\u0443."
+    UpperAudio: {fileID: 8300000, guid: f6acfb1698f70a944991433e452163e7, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 0f6e126a65c4a7848902edb6c8eb1d93, type: 3}
+  - Character: 24
+    SpriteUpper: {fileID: 211020532207957774, guid: 5d998c9e3b051a44daa980936fa55c55,
+      type: 3}
+    SpriteBottom: {fileID: -4941066325408554325, guid: d804846450daa6649b0149c72d7309a5,
+      type: 3}
+    TextUpper: "\u041F\u0430\u0440 \u0438\u0437 \u043D\u043E\u0441\u0430 \u0443\u0442\u0440\u043E\u043C
+      \u0431\u044C\u0435\u0442 - ~\u041A\u0438\u043F\u044F\u0442\u043E\u043A \u0432\u043E
+      \u043C\u043D\u0435 \u0436\u0438\u0432\u0435\u0442."
+    TextBottom: "\u0412 \u043A\u0443\u0445\u043D\u0435 \u044F \u0437\u0430 \u0447\u0430\u0448\u043A\u0443
+      \u0447\u0430\u044F, ~\u041A\u0430\u043A \u043E\u0431\u044B\u0447\u043D\u043E,
+      \u043E\u0442\u0432\u0435\u0447\u0430\u044E."
+    UpperAudio: {fileID: 8300000, guid: c57b6d5beebd340ecaab5cc007a2f457, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 28a102500d65e43d7ac29ae5b293a31a, type: 3}
+  - Character: 25
+    SpriteUpper: {fileID: 7459549909244011365, guid: ef4ece8b05b21db468ba5946b2cd48c8,
+      type: 3}
+    SpriteBottom: {fileID: -9038913529251278911, guid: 02c60b548c5ffc541b7ace3e7938a974,
+      type: 3}
+    TextUpper: "\u041F\u043E \u0431\u043E\u043B\u043E\u0442\u0443 \u0438 \u0432\u043E\u0434\u0435
+      ~\u041F\u043E\u043C\u043E\u0433\u0443 \u043F\u0440\u043E\u0439\u0442\u0438
+      \u0432\u0435\u0437\u0434\u0435."
+    TextBottom: "\u041E\u0434\u0435\u0432\u0430\u0439 \u043C\u0435\u043D\u044F \u043D\u0430
+      \u043D\u043E\u0433\u0443 ~\u0418 \u043E\u0442\u043F\u0440\u0430\u0432\u0438\u043C\u0441\u044F
+      \u0432 \u0434\u043E\u0440\u043E\u0433\u0443."
+    UpperAudio: {fileID: 8300000, guid: d140d190db9d69444a2846a46c59eeee, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 032e5ad8e0f96854e8a62375e66c83b0, type: 3}
+  - Character: 26
+    SpriteUpper: {fileID: -8152224793763755189, guid: 18483fd2d35bf3b4facd1b836ee789aa,
+      type: 3}
+    SpriteBottom: {fileID: -4984389783896803139, guid: 89bb8558210b8ee42a4a47bc4311f6ff,
+      type: 3}
+    TextUpper: "\u042F \u0432 \u0448\u043A\u0430\u0444\u0443 \u0441\u0442\u043E\u044E
+      \u043F\u0443\u0441\u0442\u0430\u044F. ~\u0418 \u043E \u043F\u0440\u0430\u0437\u0434\u043D\u0438\u043A\u0435
+      \u043C\u0435\u0447\u0442\u0430\u044E."
+    TextBottom: "\u0422\u044B \u0432 \u043C\u0435\u043D\u044F \u043D\u0430\u043B\u0435\u0439
+      \u0432\u043E\u0434\u044B, ~\u042F\u0440\u043A\u0438\u0435 \u043F\u043E\u0441\u0442\u0430\u0432\u044C
+      \u0446\u0432\u0435\u0442\u044B\u044E"
+    UpperAudio: {fileID: 8300000, guid: cc1923c531d9288439c57ca111abe39d, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 860a6ff5eaafedf4f87fcffdaf870e50, type: 3}
+  - Character: 27
+    SpriteUpper: {fileID: 1633936003328746846, guid: 991a46983fdb44a4ca62a8c6d0dda285,
+      type: 3}
+    SpriteBottom: {fileID: 3799480482707727993, guid: bbdfb42b6f28a94498bc6e97bd2f3891,
+      type: 3}
+    TextUpper: "\u041C\u043E\u0436\u043D\u043E \u0447\u0430\u0439 \u0432 \u043C\u0435\u043D\u044F
+      \u043D\u0430\u043B\u0438\u0442\u044C ~\u041C\u043E\u0436\u043D\u043E \u0441\u0430\u0445\u0430\u0440
+      \u043F\u043E\u043B\u043E\u0436\u0438\u0442\u044C."
+    TextBottom: "\u042F \u043D\u0430 \u0431\u043B\u044E\u0434\u0435\u0447\u043A\u0435
+      \u0441\u0442\u043E\u044E ~\u0413\u043E\u0441\u0442\u044F \u0447\u0430\u0435\u043C
+      \u043D\u0430\u043F\u043E\u044E."
+    UpperAudio: {fileID: 8300000, guid: 39c076a4cef067141b37022b4159595d, type: 3}
+    BottomAudio: {fileID: 8300000, guid: f12111144d8b39a48a9d0506b9449398, type: 3}
+  - Character: 28
+    SpriteUpper: {fileID: -6225828767284593667, guid: ed62f4c71a3ac214e83014038b88463f,
+      type: 3}
+    SpriteBottom: {fileID: 3717896355963650848, guid: eacde62717653d345ad310de02f1b1cf,
+      type: 3}
+    TextUpper: "\u042F \u0440\u0430\u0441\u0442\u0443 \u0432 \u0433\u043E\u0440\u0448\u043A\u0435
+      \u0441 \u0437\u0435\u043C\u043B\u0435\u0439 ~\u042F \u043A\u043E\u043B\u044E\u0447\u0438\u0439,
+      \u043D\u043E \u043D\u0435 \u0437\u043B\u043E\u0439."
+    TextBottom: "\u041F\u0443\u0441\u0442\u044C-\u0437\u0435\u043B\u0435\u043D\u044B\u0439,
+      \u043D\u043E \u043D\u0435 \u0435\u043B\u043A\u0430. ~\u0414\u043E\u043C\u0438\u043A
+      \u043C\u043E\u0439 - \u0441 \u0446\u0432\u0435\u0442\u0430\u043C\u0438 \u043F\u043E\u043B\u043A\u0430."
+    UpperAudio: {fileID: 8300000, guid: 27041f49ba2ae8540a633aba01970407, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 13fff9ddf49aa744eb4a1a8f483b3861, type: 3}
+  - Character: 29
+    SpriteUpper: {fileID: -7787931752223029897, guid: 0916e9e1614c0974d9bab03f71560625,
+      type: 3}
+    SpriteBottom: {fileID: -8211754944657470264, guid: fb0e7f8b8901f0242a52da10ea3924f4,
+      type: 3}
+    TextUpper: "\u041C\u043E\u0439 \u0432\u0435\u0441\u0435\u043B\u044B\u0439 \u0433\u0440\u043E\u043C\u043A\u0438\u0439
+      \u0437\u0432\u043E\u043D ~\u041F\u0440\u043E\u0433\u043E\u043D\u044F\u0435\u0442
+      \u0432\u0441\u044F\u043A\u0438\u0439 \u0441\u043E\u043D."
+    TextBottom: "\u0421\u0442\u0440\u0435\u043B\u043A\u0438 \u043D\u0435 \u0434\u0430\u0434\u0443\u0442
+      \u0437\u0430\u0431\u044B\u0442\u044C, ~\u0427\u0442\u043E \u043F\u043E\u0440\u0430
+      \u0442\u0435\u0431\u044F \u0431\u0443\u0434\u0438\u0442\u044C."
+    UpperAudio: {fileID: 8300000, guid: 1f87cfe4eeface94f8af10874f635cb8, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 25766a9d3cd266347a5b0c9c861c55c5, type: 3}
+  - Character: 30
+    SpriteUpper: {fileID: 3064495123019179952, guid: 611dc26d14d4c804a94947a7f8fcbaa5,
+      type: 3}
+    SpriteBottom: {fileID: 8418452904931666441, guid: 6ecb47100f713574aaf4f3c16c145a57,
+      type: 3}
+    TextUpper: "\u041E\u0442 \u0433\u0440\u043E\u0437\u044B \u0438 \u043E\u0442 \u0434\u043E\u0436\u0434\u044F
+      ~\u042F \u0432\u0441\u0435\u0433\u0434\u0430 \u0441\u043F\u0430\u0441\u0443
+      \u0442\u0435\u0431\u044F."
+    TextBottom: "\u0421\u043B\u043E\u0432\u043D\u043E \u0442\u0440\u043E\u0441\u0442\u044C,
+      \u044F \u0442\u043E\u043D\u043A\u0438\u043C \u0431\u044B\u043B, ~\u0410 \u0442\u0435\u043F\u0435\u0440\u044C
+      \u0442\u0435\u0431\u044F \u043D\u0430\u043A\u0440\u044B\u043B"
+    UpperAudio: {fileID: 8300000, guid: e69efb9ca740c794eb797ee47f438c50, type: 3}
+    BottomAudio: {fileID: 8300000, guid: ca734f65d0a3cb545a440bf8de919dc1, type: 3}
+  - Character: 31
+    SpriteUpper: {fileID: -5298647247185862026, guid: 9faf419d0e91bd642ae4ca438a366d98,
+      type: 3}
+    SpriteBottom: {fileID: 3239573864577809620, guid: 0a2417860c7cd0e4ca7a1efe43e4b98d,
+      type: 3}
+    TextUpper: "\u042F, \u0423\u043A\u0440\u0430\u0448\u0435\u043D\u043D\u044B\u0439
+      \u0441\u0432\u0435\u0447\u0430\u043C\u0438, ~\u041D\u0430 \u0441\u0442\u043E\u043B\u0435
+      \u043F\u0435\u0440\u0435\u0434 \u0433\u043E\u0441\u0442\u044F\u043C\u0438. "
+    TextBottom: "\u041E\u0442\u0440\u0435\u0437\u0430\u0439 \u043A\u0443\u0441\u043E\u043A
+      \u0440\u0435\u0439 ~\u0423\u0433\u043E\u0441\u0442\u0438 \u0441\u0432\u043E\u0438\u0445
+      \u0434\u0440\u0443\u0437\u0435\u0439!"
+    UpperAudio: {fileID: 8300000, guid: df05a6c9d7a2fd64598ef12233917306, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 137b3bf04addd224a885d9d99cf8152b, type: 3}
+  - Character: 32
+    SpriteUpper: {fileID: 2043489417594004209, guid: dfdc2318a84839541b985e205ccb8448,
+      type: 3}
+    SpriteBottom: {fileID: 6494358897637027385, guid: 2437ff2fb508a124591aeaac98049a89,
+      type: 3}
+    TextUpper: "\u0412\u043E\u0442 \u0432\u043E\u0434\u044B \u0432 \u043C\u0435\u043D\u044F
+      \u043D\u0430\u043B\u0438\u043B\u0438 ~\u0420\u044B\u0431\u043E\u043A \u0432\u043D\u0443\u0442\u0440\u044C
+      \u043F\u043E\u0441\u0435\u043B\u0438\u043B\u0438"
+    TextBottom: "\u042F \u0434\u043B\u044F \u0440\u044B\u0431-\u043F\u0440\u043E\u0437\u0440\u0430\u0447\u043D\u044B\u0439
+      \u0434\u043E\u043C. ~\u0414\u043B\u044F \u043A\u0432\u0430\u0440\u0442\u0438\u0440\u044B
+      - \u0432\u043E\u0434\u043E\u0435\u043C."
+    UpperAudio: {fileID: 8300000, guid: 400fa3a7870ce974fbe09260c2375530, type: 3}
+    BottomAudio: {fileID: 8300000, guid: fd34b2330657e0e4b911c3879eec931b, type: 3}
+  - Character: 33
+    SpriteUpper: {fileID: 8288602186214367472, guid: 19127eee71356784cbcbcf5ec41a0a71,
+      type: 3}
+    SpriteBottom: {fileID: 2403527973265603813, guid: d93d84522ac0b504482e5367163b9fd0,
+      type: 3}
+    TextUpper: "\u0421\u0442\u043E\u0438\u0442 \u043A \u0441\u0442\u0440\u0443\u043D\u0430\u043C
+      \u043F\u0440\u0438\u043A\u043E\u0441\u043D\u0443\u0442\u044C\u0441\u044F, ~\u041C\u043D\u043E\u0433\u043E
+      \u043D\u043E\u0442 \u0432\u043E \u043C\u043D\u0435 \u043F\u0440\u043E\u0441\u043D\u0443\u0442\u0441\u044F."
+    TextBottom: "\u0418 \u0441 \u0445\u043E\u0437\u044F\u0438\u043D\u043E\u043C \u0432\u0434\u0432\u043E\u0435\u043C 
+      ~\u041C\u044B \u0432\u0430\u043C \u043F\u0435\u0441\u043D\u0438 \u0437\u0430\u043F\u043E\u0435\u043C."
+    UpperAudio: {fileID: 8300000, guid: 18df71eedbcfbb0438568b25d24ed3ca, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 846e626f68484f646ba7676103fd3352, type: 3}
+  - Character: 34
+    SpriteUpper: {fileID: 1582369718997045311, guid: 2d0206778cdf0374585232bb297f8020,
+      type: 3}
+    SpriteBottom: {fileID: 654286599986491979, guid: 169c9811ac902f64abb06a3ccb31c2f4,
+      type: 3}
+    TextUpper: "\u0415\u0441\u043B\u0438 \u0435\u0434\u0435\u0448\u044C, \u0441\u043F\u0438\u0442\u0441\u044F
+      \u0441\u043B\u0430\u0434\u043A\u043E. ~\u042F \u0443\u0434\u043E\u0431\u043D\u0430
+      \u043A\u0430\u043A \u043A\u0440\u043E\u0432\u0430\u0442\u043A\u0430."
+    TextBottom: "\u042F \u0432\u043E\u0437\u0438\u043B\u0430 \u043C\u0430\u043B\u044B\u0448\u0430
+      ~\u041F\u043E \u0434\u043E\u0440\u043E\u0436\u043A\u0435 \u043D\u0435 \u0441\u043F\u0435\u0448\u0430. "
+    UpperAudio: {fileID: 8300000, guid: f270e69dc2bf8bd418972ebbeb34753c, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 8a470c95e4011d1408c98374067c3b7a, type: 3}
+  - Character: 35
+    SpriteUpper: {fileID: 211020532207957774, guid: de59a674e39c8354696cd92d38112c32,
+      type: 3}
+    SpriteBottom: {fileID: -4941066325408554325, guid: 603f0748a00a20f45a7143a7c2000a86,
+      type: 3}
+    TextUpper: "\u042F \u043F\u043E \u0440\u0435\u043B\u044C\u0441\u0430\u043C \u0433\u0440\u043E\u043C\u044B\u0445\u0430\u044E,
+      ~\u041E\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0443 \u043E\u0431\u044A\u044F\u0432\u043B\u044F\u044E."
+    TextBottom: "\u042F, \u0423\u0436\u0435 \u0432 \u043A\u043E\u0442\u043E\u0440\u044B\u0439
+      \u0440\u0430\u0437, ~\u0414\u043E\u0432\u043E\u0436\u0443 \u0434\u043E \u0434\u043E\u043C\u0430
+      \u0432\u0430\u0441."
+    UpperAudio: {fileID: 8300000, guid: 7f2611c6afb2c4fb8ad9f561bb14920d, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 8eb6e1468585c4d20bd049739e6cba15, type: 3}
+  - Character: 36
+    SpriteUpper: {fileID: 7459549909244011365, guid: ab7de72048db3f0439116deb5532f8a3,
+      type: 3}
+    SpriteBottom: {fileID: -9038913529251278911, guid: 5fb87d660f9502644a957f3169b0fb56,
+      type: 3}
+    TextUpper: "\u0422\u044B \u043F\u0435\u0434\u0430\u043B\u0438 \u0440\u0430\u0441\u043A\u0440\u0443\u0442\u0438,
+      ~\u0418 \u0441\u043E \u043C\u043D\u043E\u0439 \u0432\u043F\u0435\u0440\u0435\u0434
+      \u043A\u0430\u0442\u0438."
+    TextBottom: "\u0420\u0443\u043B\u044C \u0431\u043B\u0435\u0441\u0442\u0438\u0442,
+      \u043C\u0435\u043B\u044C\u043A\u0430\u044E\u0442 \u0441\u043F\u0438\u0446\u044B.
+      ~\u0422\u043E-\u0442\u043E \u043C\u0430\u043C\u0430 \u0443\u0434\u0438\u0432\u0438\u0442\u0441\u044F!"
+    UpperAudio: {fileID: 8300000, guid: 3cc6e796b3bcd4b409a4d6bbae5031c8, type: 3}
+    BottomAudio: {fileID: 8300000, guid: c36184f89e88f4d45a90a6118cff0103, type: 3}
+  - Character: 37
+    SpriteUpper: {fileID: -8152224793763755189, guid: ea5c1ca6ba00abc47b92bb25dc8bd601,
+      type: 3}
+    SpriteBottom: {fileID: -4984389783896803139, guid: 5745c53ac68b1834eb141f21259a2a1b,
+      type: 3}
+    TextUpper: "\u041A\u0440\u0443\u0433\u043B\u044B\u0439... \u043F\u043E \u043D\u0435\u0431\u0443
+      \u043F\u043B\u044B\u0432\u0443. ~\u0412\u0430\u0441 \u0432 \u043A\u043E\u0440\u0437\u0438\u043D\u0443
+      \u0441\u0435\u0441\u0442\u044C \u0437\u043E\u0432\u0443."
+    TextBottom: "\u041C\u044B \u043E\u0442\u043F\u0440\u0430\u0432\u0438\u043C\u0441\u044F
+      \u0432 \u043F\u043E\u043B\u0435\u0442. ~\u041A\u0443\u0434\u0430 \u0432\u0435\u0442\u0435\u0440
+      \u043F\u043E\u0437\u043E\u0432\u0435\u0442."
+    UpperAudio: {fileID: 8300000, guid: ccf4c1668be8e4d0db96927ff1bbd7c1, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 65d59da2d6189400eb5bf7530224bb79, type: 3}
+  - Character: 38
+    SpriteUpper: {fileID: 1633936003328746846, guid: 7504be3ddd5681b47881239e1238ff73,
+      type: 3}
+    SpriteBottom: {fileID: 3799480482707727993, guid: 4fde0d222f8770e4393f6e9892fb3cc3,
+      type: 3}
+    TextUpper: "\u042F \u043F\u043E \u0440\u0435\u0447\u043A\u0430\u043C \u0438 \u043C\u043E\u0440\u044F\u043C
+      ~\u0413\u0440\u0443\u0437\u044B \u0434\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u044E
+      \u0432\u0430\u043C."
+    TextBottom: "\u041F\u043E\u0432\u0435\u0434\u0435\u0442 \u043D\u0430\u0441 \u043A\u0430\u043F\u0438\u0442\u0430\u043D
+      ~\u041F\u0440\u044F\u043C\u043E \u0447\u0435\u0440\u0435\u0437 \u043E\u043A\u0435\u0430\u043D."
+    UpperAudio: {fileID: 8300000, guid: 04df7c98e12017045ac58f7bf5a6647a, type: 3}
+    BottomAudio: {fileID: 8300000, guid: e7f32b0603e35674087c607bcffbed89, type: 3}
+  - Character: 39
+    SpriteUpper: {fileID: -6225828767284593667, guid: 85e82d04e15e4ad46ac479ac2015bd4d,
+      type: 3}
+    SpriteBottom: {fileID: 3717896355963650848, guid: fb1931f0008fb44449c417f484164802,
+      type: 3}
+    TextUpper: "\u0421\u0438\u043B\u044B \u0432 \u0433\u0443\u0441\u0435\u043D\u0438\u0446\u0430\u0445
+      \u043C\u043D\u043E\u0433\u043E ~\u0427\u0438\u0449\u0443 \u044F \u043A\u043E\u0432\u0448\u043E\u043C
+      \u0434\u043E\u0440\u043E\u0433\u0443. "
+    TextBottom: "\u0410 \u043F\u043E\u0442\u043E\u043C \u0432 \u043F\u043E\u043B\u044F
+      \u0441\u043F\u0435\u0448\u0443. ~\u041F\u0430\u0448\u043D\u044E \u043F\u043B\u0443\u0433\u043E\u043C
+      \u0440\u0430\u0441\u043F\u0430\u0448\u0443. "
+    UpperAudio: {fileID: 8300000, guid: 7be60c86935db1743ba7498b5f37a546, type: 3}
+    BottomAudio: {fileID: 8300000, guid: fbfaeeabf6b01514097196f61f67daa9, type: 3}
+  - Character: 40
+    SpriteUpper: {fileID: -7787931752223029897, guid: 7a3dcd35520316f44adfbbce50df361d,
+      type: 3}
+    SpriteBottom: {fileID: -8211754944657470264, guid: 70f9e3778d109de4591e77c5dd20eb99,
+      type: 3}
+    TextUpper: "\u041F\u0443\u0442\u044C \u043F\u043E \u0440\u0435\u043B\u044C\u0441\u0430\u043C
+      \u043C\u043E\u0439 \u0438\u0434\u0435\u0442, ~\u042F \u0441\u043E\u0441\u0442\u0430\u0432
+      \u0442\u044F\u043D\u0443 \u0432\u043F\u0435\u0440\u0435\u0434. "
+    TextBottom: "\u0421\u0442\u0440\u043E\u0433\u0438\u0439 \u043C\u0430\u0448\u0438\u043D\u0438\u0441\u0442
+      \u0441\u0438\u0434\u0438\u0442. ~\u0417\u0430 \u0434\u043E\u0440\u043E\u0433\u043E\u044E
+      \u0441\u043B\u0435\u0434\u0438\u0442"
+    UpperAudio: {fileID: 8300000, guid: 75786bf846228aa4583e660ff4021db2, type: 3}
+    BottomAudio: {fileID: 8300000, guid: ab9aa27385eff5f48a982857779cd5d0, type: 3}
+  - Character: 41
+    SpriteUpper: {fileID: 3064495123019179952, guid: ce3a17633c999b94185706b0a105fee2,
+      type: 3}
+    SpriteBottom: {fileID: 8418452904931666441, guid: 8323b8369fd6e334196461566e4ca6e4,
+      type: 3}
+    TextUpper: "\u042F \u0432\u043E\u0436\u0443 \u043F\u0435\u0441\u043E\u043A \u043D\u0430
+      \u0441\u0442\u0440\u043E\u0439\u043A\u0443 ~\u0418 \u043D\u0435 \u0443\u0441\u0442\u0430\u044E
+      \u043D\u0438 \u0441\u043A\u043E\u043B\u044C\u043A\u043E."
+    TextBottom: "\u041A\u0443\u0437\u043E\u0432 \u043F\u043E\u043B\u043D\u044B\u0439
+      \u043D\u0430\u0433\u0440\u0443\u0437\u0438\u043B ~\u0421\u0430\u043C \u0434\u043E\u0432\u0435\u0437
+      \u0438 \u0441\u0430\u043C \u0441\u0432\u0430\u043B\u0438\u043B."
+    UpperAudio: {fileID: 8300000, guid: 297bb4181eb979e49be0f49f7de4c481, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 38789514f105d2946903b99c55d00a15, type: 3}
+  - Character: 42
+    SpriteUpper: {fileID: -5298647247185862026, guid: b23e4a8c456a63140a0b293c88b58122,
+      type: 3}
+    SpriteBottom: {fileID: 3239573864577809620, guid: 192a2195a36ef2c45b24172e6a6d2365,
+      type: 3}
+    TextUpper: "\u0412\u043C\u0435\u0441\u0442\u0435 \u0441 \u043E\u043F\u044B\u0442\u043D\u044B\u043C
+      \u043F\u0438\u043B\u043E\u0442\u043E\u043C ~\u041D\u0430\u0441\u043B\u0430\u0436\u0434\u0430\u0435\u043C\u0441\u044F
+      \u043F\u043E\u043B\u0435\u0442\u043E\u043C."
+    TextBottom: "\u041D\u0430\u0434 \u0441\u043E\u0431\u043E\u044E \u0432\u0438\u043D\u0442
+      \u043A\u0440\u0443\u0447\u0443 ~\u0418 \u043B\u0435\u0447\u0443 \u043A\u0443\u0434\u0430
+      \u0445\u043E\u0447\u0443."
+    UpperAudio: {fileID: 8300000, guid: ba4b6d3cc921147ae97a54c57f001689, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 3769780a248bb489f8143f5551d2dac7, type: 3}
+  - Character: 43
+    SpriteUpper: {fileID: 2043489417594004209, guid: b7351e2ffe0a2aa4a836073560f5b1dc,
+      type: 3}
+    SpriteBottom: {fileID: 6494358897637027385, guid: 434a6d79711416c4ebc9dbf01c1fd6c5,
+      type: 3}
+    TextUpper: "\u042F \u0441\u043B\u0430\u0431\u0435\u0439 \u0433\u0440\u0443\u0437\u043E\u0432\u0438\u043A\u0430.
+      ~\u041D\u043E \u0431\u044B\u0441\u0442\u0440\u0435\u0439 \u043D\u0430\u0432\u0435\u0440\u043D\u044F\u043A\u0430."
+    TextBottom: "\u0412 \u043A\u0440\u0435\u0441\u043B\u0435 \u043A\u043E\u0436\u0430\u043D\u043E\u043C
+      \u043C\u043E\u0435\u043C ~\u041F\u0430\u043F\u0430 \u0435\u0434\u0435\u0442
+      \u0437\u0430 \u0440\u0443\u043B\u0435\u043C."
+    UpperAudio: {fileID: 8300000, guid: 33c678625984bd94cb7f5a7a5ecb10cc, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 9dd9b2000fe87744f8785a29eb8c0477, type: 3}
+  - Character: 44
+    SpriteUpper: {fileID: 8288602186214367472, guid: 48726acd3c816594cbe7dad5d75cf54d,
+      type: 3}
+    SpriteBottom: {fileID: 2403527973265603813, guid: 7662d7c3281d9494c8e1064483797c25,
+      type: 3}
+    TextUpper: "\u0420\u0430\u0437\u0432\u0438\u0432\u0430\u044E \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C
+      \u0441\u0432\u0435\u0442\u0430. ~\u0426\u0435\u043B\u044C - \u0434\u0430\u043B\u0451\u043A\u0430\u044F
+      \u043F\u043B\u0430\u043D\u0435\u0442\u0430."
+    TextBottom: "\u0427\u0442\u043E\u0431 \u044F \u0431\u044B\u0441\u0442\u0440\u043E\u044E
+      \u0431\u044B\u043B\u0430, ~\u041F\u043B\u0430\u043C\u044F \u0440\u0432\u0451\u0442\u0441\u044F
+      \u0438\u0437 \u0441\u043E\u043F\u043B\u0430."
+    UpperAudio: {fileID: 8300000, guid: 9cb03032a92459f47a4b4c35fbae8ef3, type: 3}
+    BottomAudio: {fileID: 8300000, guid: 71ef733dbd769cd488c86620921b7782, type: 3}
+  BookDatas:
+  - Book: 0
+    PriceIOS: "75 \u0420"
+    PriceAndroid: "50 \u0420"
+  - Book: 1
+    PriceIOS: "75 \u0420"
+    PriceAndroid: "50 \u0420"
+  - Book: 2
+    PriceIOS: "75 \u0420"
+    PriceAndroid: "50 \u0420"
+  - Book: 3
+    PriceIOS: "75 \u0420"
+    PriceAndroid: "50 \u0420"
