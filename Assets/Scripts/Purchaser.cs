@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Purchasing;
+using UnityEngine.Purchasing.Extension;
 
 [System.Serializable]
 public class BookPurchase
@@ -13,7 +14,7 @@ public class BookPurchase
 }
 
 
-public class Purchaser : MonoBehaviour, IStoreListener
+public class Purchaser : MonoBehaviour, IDetailedStoreListener
 {
     public bool IsFakeShop = true;
     public bool AnyPurchase;
@@ -35,28 +36,29 @@ public class Purchaser : MonoBehaviour, IStoreListener
         {
             InitializePurchasing();
         }
-        AnyPurchase = PlayerPrefs.GetInt("AP") == 0 ? false : true;
+        AnyPurchase = PlayerPrefs.GetInt("AP") != 0;
     }
 
-    public void InitializePurchasing()
+    private void InitializePurchasing()
     {
         if (IsInitialized())
         {
             return;
         }
+        
         var module = StandardPurchasingModule.Instance();
-        //module.useFakeStoreAlways = false;
+        module.useFakeStoreAlways = false;
             
         module.useFakeStoreUIMode = FakeStoreUIMode.Default;
         var builder = ConfigurationBuilder.Instance(module);
 
         foreach (var book in _bookPurchases)
         {
-#if UNITY_ANDROID
-            builder.AddProduct(book.AndroidKey, ProductType.NonConsumable);
-#else
-            builder.AddProduct(book.IOSKey, ProductType.NonConsumable);
-#endif
+            builder.AddProduct(book.AndroidKey, ProductType.NonConsumable, new IDs()
+            {
+                {book.AndroidKey, GooglePlay.Name},
+                {book.IOSKey, MacAppStore.Name},
+            });
         }
         UnityPurchasing.Initialize(this, builder);
     }
@@ -93,7 +95,7 @@ public class Purchaser : MonoBehaviour, IStoreListener
 
             if (product != null && product.availableToPurchase)
             {
-                Debug.Log(string.Format("Purchasing product asychronously: '{0}'", product.definition.id));
+                Debug.Log($"Purchasing product asychronously: '{product.definition.id}'");
                 m_StoreController.InitiatePurchase(product);
             }
             else
@@ -119,7 +121,7 @@ public class Purchaser : MonoBehaviour, IStoreListener
         {
             Debug.Log("RestorePurchases started ...");
             var apple = m_StoreExtensionProvider.GetExtension<IAppleExtensions>();
-            apple.RestoreTransactions((result) => {
+            apple.RestoreTransactions((result, _) => {
                 Debug.Log("RestorePurchases continuing: " + result + ". If no further messages, no purchases available to restore.");
             });
         }
@@ -137,6 +139,11 @@ public class Purchaser : MonoBehaviour, IStoreListener
         Debug.Log("OnInitialized: PASS");
         m_StoreController = controller;
         m_StoreExtensionProvider = extensions;
+    }
+
+    public void OnPurchaseFailed(Product product, PurchaseFailureDescription failureDescription)
+    {
+        Debug.Log($"OnPurchaseFailed: {failureDescription.message}");
     }
 
     public void OnInitializeFailed(InitializationFailureReason error)
@@ -158,11 +165,11 @@ public class Purchaser : MonoBehaviour, IStoreListener
             if (String.Equals(args.purchasedProduct.definition.id, book.AndroidKey, StringComparison.Ordinal))
             {
                 OnBookPurchased?.Invoke(book);
-                Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
+                Debug.Log($"ProcessPurchase: PASS. Product: '{args.purchasedProduct.definition.id}'");
             }
             else
             {
-                Debug.Log(string.Format("ProcessPurchase: FAIL. Unrecognized product: '{0}'", args.purchasedProduct.definition.id));
+                Debug.Log($"ProcessPurchase: FAIL. Unrecognized product: '{args.purchasedProduct.definition.id}'");
             }
 
 #else
@@ -184,6 +191,7 @@ public class Purchaser : MonoBehaviour, IStoreListener
 
     public void OnPurchaseFailed(Product product, PurchaseFailureReason failureReason)
     {
-        Debug.Log(string.Format("OnPurchaseFailed: FAIL. Product: '{0}', PurchaseFailureReason: {1}", product.definition.storeSpecificId, failureReason));
+        Debug.Log(
+            $"OnPurchaseFailed: FAIL. Product: '{product.definition.storeSpecificId}', PurchaseFailureReason: {failureReason}");
     }
 }
